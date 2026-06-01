@@ -6,12 +6,12 @@ Powerful automation tools for X (Twitter) platform.
 
 ### 🔁 Retweet Liker
 Automatically like retweets and tweets from selected accounts.
-- Free: 50 likes/day
+- Free: 20 likes/day
 - Pro: Unlimited likes
 
 ### 👥 X Follow & Unfollow Pro
 Auto follow and unfollow X accounts with advanced filters.
-- Free: 25 follows/day  
+- Free: 20 follows/day  
 - Pro: Unlimited follows
 
 ## Download
