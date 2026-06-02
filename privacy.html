@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — X AutoLike & Save Pro</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg2: #161b22;
+    --bd: #21262d;
+    --blue: #1d9bf0;
+    --green: #00ba7c;
+    --text: #e6edf3;
+    --muted: #7d8590;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--bd);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .site-header .logo {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, #1d9bf0, #0d6efd);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .site-header .brand { font-size: 15px; font-weight: 700; color: var(--text); }
+  .site-header .brand span { color: var(--blue); }
+  .back-link {
+    margin-left: auto;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .back-link:hover { text-decoration: underline; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0d1117 0%, #0d1f35 100%);
+    border-bottom: 1px solid var(--bd);
+    padding: 60px 24px 48px;
+    text-align: center;
+  }
+  .hero h1 { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
+  .hero h1 span { color: var(--blue); }
+  .hero .meta { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  .badge {
+    display: inline-block;
+    background: rgba(0,186,124,.12);
+    color: var(--green);
+    border: 1px solid rgba(0,186,124,.3);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  /* ── CONTENT ── */
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .toc {
+    background: var(--bg2);
+    border: 1px solid var(--bd);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 40px;
+  }
+  .toc h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 12px; }
+  .toc ol { padding-left: 18px; }
+  .toc li { margin-bottom: 6px; }
+  .toc a { color: var(--blue); text-decoration: none; font-size: 14px; }
+  .toc a:hover { text-decoration: underline; }
+
+  section { margin-bottom: 48px; }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--bd);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2 .num {
+    background: var(--blue);
+    color: #fff;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  p { color: #c9d1d9; margin-bottom: 12px; }
+  ul, ol { padding-left: 20px; margin-bottom: 12px; }
+  li { color: #c9d1d9; margin-bottom: 6px; }
+
+  /* ── TABLE ── */
+  .table-wrap { overflow-x: auto; margin-bottom: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th {
+    background: var(--bg2);
+    color: var(--blue);
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    border: 1px solid var(--bd);
+  }
+  td {
+    padding: 10px 14px;
+    border: 1px solid var(--bd);
+    color: #c9d1d9;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,.02); }
+
+  /* ── HIGHLIGHT BOX ── */
+  .box {
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .box-green {
+    background: rgba(0,186,124,.08);
+    border: 1px solid rgba(0,186,124,.25);
+    color: #7ee8c0;
+  }
+  .box-blue {
+    background: rgba(29,155,240,.08);
+    border: 1px solid rgba(29,155,240,.25);
+    color: #93d4f8;
+  }
+  .box-yellow {
+    background: rgba(244,168,35,.08);
+    border: 1px solid rgba(244,168,35,.25);
+    color: #f4c86a;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--bg2);
+    border-top: 1px solid var(--bd);
+    padding: 28px 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer a { color: var(--blue); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">❤️</div>
+  <div class="brand">X AutoLike <span>&</span> Save Pro</div>
+  <a class="back-link" href="index.html">← Back to Home</a>
+</header>
+
+<div class="hero">
+  <div class="badge">✓ Privacy First</div>
+  <h1>Privacy <span>Policy</span></h1>
+  <p style="color:#7d8590;max-width:500px;margin:0 auto;">We believe your data belongs to you. Here's exactly what we collect, what we don't, and why.</p>
+  <div class="meta">Last updated: June 2, 2026 &nbsp;·&nbsp; Developer: Ali Bulut &nbsp;·&nbsp; <a href="mailto:alibulutt@gmail.com">alibulutt@gmail.com</a></div>
+</div>
+
+<div class="container">
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-collected">Data We Collect</a></li>
+      <li><a href="#data-not-collected">Data We Do NOT Collect</a></li>
+      <li><a href="#license">License Key Validation</a></li>
+      <li><a href="#permissions">Permissions Explained</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section id="overview">
+    <h2><span class="num">1</span> Overview</h2>
+    <p><strong>X AutoLike & Save Pro</strong> is a Firefox browser extension that automatically likes and bookmarks tweets and retweets from selected X (Twitter) accounts.</p>
+    <div class="box box-green">
+      🔒 <strong>Short version:</strong> We store your settings locally on your device. We never sell your data. The only external communication is license key validation over HTTPS.
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section id="data-collected">
+    <h2><span class="num">2</span> Data We Collect</h2>
+    <p>The Extension stores the following data <strong>exclusively in your browser's local storage</strong> (<code>browser.storage.local</code>). This data stays on your device.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Data</th><th>Purpose</th><th>Stored Where</th></tr>
+        <tr><td>X account usernames you add</td><td>To know which accounts to monitor</td><td>Local only</td></tr>
+        <tr><td>Daily like count</td><td>To enforce free/pro daily limit</td><td>Local only</td></tr>
+        <tr><td>License key</td><td>To validate your Pro subscription</td><td>Local only</td></tr>
+        <tr><td>Settings (interval, mode, language)</td><td>To remember your preferences</td><td>Local only</td></tr>
+        <tr><td>Scheduler time</td><td>To auto-run at your chosen time</td><td>Local only</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="data-not-collected">
+    <h2><span class="num">3</span> Data We Do NOT Collect</h2>
+    <div class="box box-green">
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li>✅ We do <strong>not</strong> collect your X (Twitter) credentials or passwords</li>
+        <li>✅ We do <strong>not</strong> access your X direct messages</li>
+        <li>✅ We do <strong>not</strong> store your browsing history</li>
+        <li>✅ We do <strong>not</strong> use analytics or tracking tools</li>
+        <li>✅ We do <strong>not</strong> sell or share any data with third parties</li>
+        <li>✅ We do <strong>not</strong> read tweet content beyond what's needed to perform the like/bookmark action</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="license">
+    <h2><span class="num">4</span> License Key Validation</h2>
+    <p>When you enter a Pro license key, the Extension sends <strong>only the license key string</strong> to our validation server to verify its validity.</p>
+    <div class="box box-blue">
+      <strong>Endpoint:</strong> <code>xtools-license.alibulutt.workers.dev</code> (Cloudflare Workers)<br/>
+      <strong>Method:</strong> HTTPS POST — encrypted in transit<br/>
+      <strong>Data sent:</strong> License key string only — no personal information<br/>
+      <strong>Data stored server-side:</strong> None — validation is stateless
+    </div>
+    <p>The key is validated against Lemon Squeezy's license system. No personal data is transmitted or logged during this process.</p>
+  </section>
+
+  <!-- 5 -->
+  <section id="permissions">
+    <h2><span class="num">5</span> Permissions Explained</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Permission</th><th>Why It's Needed</th></tr>
+        <tr><td><code>activeTab</code></td><td>To interact with the currently open X tab</td></tr>
+        <tr><td><code>storage</code></td><td>To save your settings locally on your device</td></tr>
+        <tr><td><code>tabs</code></td><td>To send like/bookmark actions to the X tab</td></tr>
+        <tr><td><code>alarms</code></td><td>To run the scheduler at your chosen time</td></tr>
+        <tr><td><code>https://x.com/*</code></td><td>To like and bookmark tweets on X</td></tr>
+        <tr><td><code>https://twitter.com/*</code></td><td>To support the legacy Twitter domain</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section id="third-party">
+    <h2><span class="num">6</span> Third-Party Services</h2>
+    <div class="box box-blue">
+      <p style="margin-bottom:8px;"><strong>Lemon Squeezy</strong> — Payment processing for Pro licenses.<br/>
+      Their privacy policy: <a href="https://www.lemonsqueezy.com/privacy" target="_blank">lemonsqueezy.com/privacy</a></p>
+      <p style="margin:0;"><strong>Cloudflare Workers</strong> — License validation hosting.<br/>
+      Their privacy policy: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">cloudflare.com/privacypolicy</a></p>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section id="retention">
+    <h2><span class="num">7</span> Data Retention</h2>
+    <p>All locally stored data is retained until you:</p>
+    <ul>
+      <li>Remove the extension from Firefox</li>
+      <li>Manually clear your browser's local storage</li>
+      <li>Click <strong>"Remove license"</strong> inside the extension (removes license key only)</li>
+    </ul>
+    <p>We have no ability to access or delete data stored locally on your device.</p>
+  </section>
+
+  <!-- 8 -->
+  <section id="children">
+    <h2><span class="num">8</span> Children's Privacy</h2>
+    <p>This Extension is not directed at children under 13. We do not knowingly collect data from children. If you believe a child has provided personal information, please contact us and we will take steps to delete it.</p>
+  </section>
+
+  <!-- 9 -->
+  <section id="changes">
+    <h2><span class="num">9</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The <strong>"Last updated"</strong> date at the top will reflect any changes. Continued use of the Extension after changes constitutes your acceptance of the updated policy.</p>
+    <div class="box box-yellow">
+      ⚠️ We recommend checking this page periodically for any updates.
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section id="contact">
+    <h2><span class="num">10</span> Contact</h2>
+    <p>For any privacy-related questions or requests:</p>
+    <ul>
+      <li>📧 Email: <a href="mailto:alibulutt@gmail.com">alibulutt@gmail.com</a></li>
+      <li>🌐 Website: <a href="https://aliibulut.github.io/xtools" target="_blank">aliibulut.github.io/xtools</a></li>
+    </ul>
+    <p>We aim to respond to all privacy inquiries within 5 business days.</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 X AutoLike & Save Pro · <a href="index.html">Home</a> · <a href="mailto:alibulutt@gmail.com">Contact</a></p>
+  <p style="margin-top:6px;">This policy applies to the Firefox extensions: <em>X AutoLike & Save Pro — Pencere</em> and <em>X AutoLike & Save Pro — Sidebar</em></p>
+</footer>
+
+</body>
+</html>
